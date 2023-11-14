@@ -21,7 +21,7 @@ PORT     STATE SERVICE VERSION
 |     MESSAGE USAGE: use [MESSAGE] to message the (currently) only channel
 |_    REPORT USAGE: use [REPORT] to report someone to the admins (with proof)
 ```
-From the NMAP scan I can see that there is some sort of interactive service running on port 3000. It looks like it could be a messaging service. It also says that the source code of the service can be found on the admin's github. A little bit of searching around and I found it.
+From the NMAP scan I can see that there is some sort of interactive service running on port 3000. It looks like it could be a messaging service. It also says that the source code of the service can be found on the admin's github. A little bit of searching around and I found [it](https://github.com/Mozzie-jpg/JPChat/blob/main/jpchat.py).
 
 Theres a snippet in the code that is vulnerable to command injection.
 
